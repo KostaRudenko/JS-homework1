@@ -1,8 +1,13 @@
+let blocks = 3;
+
 let switchTime = (n) => {
-    for (let i = 1; i <= n; i++) {
+    for (let i = 1; i <= blocks; i++) {
         switch (n) {
-            case n:
-                console.log(i);
+            case i:
+                console.log(i, true);
+                break;
+            default:
+                console.log(i, false);
                 break;
         }
     }
@@ -14,12 +19,12 @@ switchTime(2);
 switchTime(3);
 console.timeEnd('time switch');
 
-//-----------------------
-
 let ifTime = (n) => {
-    for (let i = 1; i <= n; i++) {
-        if (n === n) {
-            console.log(i);
+    for (let i = 1; i <= blocks; i++) {
+        if (n === i) {
+            console.log(i, true);
+        } else {
+            console.log(i, false);
         }
     }
     console.log('---');
